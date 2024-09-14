@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Grid Example</title>
+</head>
+<body>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .flex-container {
+        display: flex;
+        justify-content:space-between; 
+        align-items: center; 
+        height: 50vh; 
+        background-color: #f4f4f4;
+    }
+    .flex-item {
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        flex: 1; 
+        margin: 20px;
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px); 
+    gap: 10px; 
+    height: 50vh;
+    background-color: #f4f4f4;
+}
+.grid-item {
+    background-color: #2196F3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+ </style>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+    </div>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+    </div>
+</body>
+</html>
+
+    
+
